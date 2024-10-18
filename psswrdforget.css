@@ -1,0 +1,83 @@
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff6b6b, #f7d94c);
+    font-family: monospace;
+}
+.container{
+    background-color: white;
+    width: 380px;
+    padding: 32px 24px;
+    font-size: 15px;
+    font-family: inherit;
+    color: #212121;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.container button:active{
+    scale: 0.95;
+}
+.container .title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.container .form{
+    display: flex;
+    flex-direction: column;
+}
+.container .formele{
+    display: flex; 
+    flex-direction: column;
+    gap: 2px;
+}
+.container .formele label{
+    font-size: 15px;
+    display: block;
+    margin-bottom: 5px;
+}
+.container .formele input{
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-family: inherit;
+    border: 1px solid #000;
+}.container .formele input::placeholder{
+    opacity: 1;
+}
+.container .formele input:focus{
+    outline: none;
+    border-color: #f7d94c;
+}
+.container .submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    margin: 44px 0;
+    width: 333px;
+    height: 28px;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #ff6b6b;
+}
+.container .submit:hover{
+    background-color: #94d181;
+}
+.container .signup-link{
+    text-decoration: none;
+    color: #1779f2;
+}.container .signup{
+    align-self: center;
+    font-weight: 500;
+}
+.container .signup-link{
+    font-weight: 400;
+}
+.container .signup-link:hover{
+    text-decoration: underline;
+}
