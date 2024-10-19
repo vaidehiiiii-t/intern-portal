@@ -1,133 +1,131 @@
 footer {
-    width: 100%;
-    background-color: #16213e;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-  
-  .footer-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-  }
-  
-  .footer-column {
-    width: 30%;
-  }
-  
-  .footer-column h3 {
-    margin-bottom: 10px;
-  }
-  
-  .footer-column p,
-  .footer-column ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .footer-column ul li {
-    margin: 5px 0;
-  }
-  
-  .footer-column ul li a {
-    color: #ff6b6b;
-    text-decoration: none;
-  }
-  
-  .footer-column ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .social-icons li {
-    margin: 0 10px;
-  }
-  
-  .social-icons li a {
-    color: #ff6b6b;
-    font-size: 20px;
-    margin: 0 20px;
-    transition: transform 0.5s ease, color 0.5s ease;
-  }
-  .social-icons i{
-    transition: transform 500ms ease-in-out;
-    
-  }
-  .social-icons i:hover{
-    transform: translateY(-10px);
-  }
-  
-  .social-icons li a:hover {
-    color: #f7d94c;
-  }
-  
-  /* Other Styling */
-  h1 {
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  input[type="text"],
-  input[type="password"] {
-    width: 100%;
-    height: 45px;
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 2px solid #ff6b6b;
-    border-radius: 10px;
-    transition: border-color 0.3s;
-  }
-  
-  input[type="text"]:focus,
-  input[type="password"]:focus {
-    border-color: #f7d94c;
-    outline: none;
-  }
-  
-  .forgot-password-text {
-    color: #ff6b6b;
-    cursor: pointer;
-    margin-top: 5px;
-    text-align: left;
-    font-weight: normal;
-  }
-  
-  button {
-    width: 100%;
-    height: 45px;
-    background-color: #ff6b6b;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-  }
-  
-  button:hover {
-    background-color: #f7d94c;
-  }
-  
-  p {
-    margin-top: 15px;
-  }
-  
-  a {
-    color: #ff6b6b;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
+  width: 100%;
+  background-color: #16213e;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer-column {
+  width: 30%;
+}
+
+.footer-column h3 {
+  margin-bottom: 10px;
+}
+
+.footer-column p,
+.footer-column ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin: 5px 0;
+}
+
+.footer-column ul li a {
+  color: #ff6b6b;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons li {
+  margin: 0 10px;
+}
+
+.social-icons li a {
+  color: #ff6b6b;
+  font-size: 20px;
+  margin: 0 20px;
+  transition: transform 0.5s ease, color 0.5s ease;
+}
+.social-icons i {
+  transition: transform 500ms ease-in-out;
+}
+.social-icons i:hover {
+  transform: translateY(-10px);
+}
+
+.social-icons li a:hover {
+  color: #f7d94c;
+}
+
+/* Other Styling */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid #ff6b6b;
+  border-radius: 10px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #f7d94c;
+  outline: none;
+}
+
+.forgot-password-text {
+  color: #ff6b6b;
+  cursor: pointer;
+  margin-top: 5px;
+  text-align: left;
+  font-weight: normal;
+}
+
+button {
+  width: 100%;
+  height: 45px;
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #f7d94c;
+}
+
+p {
+  margin-top: 15px;
+}
+
+a {
+  color: #ff6b6b;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

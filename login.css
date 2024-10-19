@@ -6,21 +6,22 @@ body {
   background-size: contain; /* Ensure the image is contained */
   font-family: "Arial", sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
   margin: 0;
-  background-attachment: fixed; /* Optional: keeps the background fixed during scroll */
-  
+  background-attachment: fixed;
 }
-.wrapper{
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-
 .container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+form {
   width: 350px;
   background-color: rgba(
     255,
@@ -31,10 +32,7 @@ body {
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-  text-align: center;
-
 }
-
 h1 {
   color: #333;
   margin-bottom: 20px;
@@ -152,5 +150,3 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
-
