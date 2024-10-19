@@ -8,10 +8,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   background-attachment: fixed; /* Optional: keeps the background fixed during scroll */
+  
 }
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 
 .container {
   width: 350px;
@@ -25,6 +32,7 @@ body {
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   text-align: center;
+
 }
 
 h1 {
@@ -144,3 +152,5 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+
