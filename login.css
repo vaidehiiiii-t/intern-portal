@@ -1,139 +1,146 @@
 body {
-    background: center / contain no-repeat url("text-behind-image\ \(2\).png"),
-            #eee linear-gradient(180deg, #1A1A2E, #16213E, #0F3460); /* Gradient */;
-        
-       
-    background-size: contain; /* Ensure the image is contained */
-    font-family: 'Arial', sans-serif;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-attachment: fixed; /* Optional: keeps the background fixed during scroll */
+  background: center / contain no-repeat
+      url(./images/login-text-behind-image.jpg),
+    #eee linear-gradient(180deg, #1a1a2e, #16213e, #0f3460); /* Gradient */
+
+  background-size: contain; /* Ensure the image is contained */
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-attachment: fixed; /* Optional: keeps the background fixed during scroll */
 }
 
 .container {
-    width: 350px;
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for better visibility */
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-    text-align: center;
+  width: 350px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Slightly transparent white for better visibility */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 h1 {
-    color: #333;
-    margin-bottom: 20px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-input[type="text"], input[type="password"] {
-    width: 100%;
-    height: 45px;
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 2px solid #ff6b6b;
-    border-radius: 10px;
-    transition: border-color 0.3s;
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid #ff6b6b;
+  border-radius: 10px;
+  transition: border-color 0.3s;
 }
 
-input[type="text"]:focus, input[type="password"]:focus {
-    border-color: #f7d94c;
-    outline: none;
-}
-
-.forgot-password-text {
-    color: #ff6b6b;
-    cursor: pointer;
-    margin-top: 5px; /* Adjusted for spacing */
-    text-align: left; /* Align text to the left */
-    font-weight: normal; /* Normal weight for the text */
-}
-
-.forgot-password-text strong {
-    font-weight: bold; /* Make the question mark bold */
-}
-
-button {
-    width: 100%;
-    height: 45px;
-    background-color: #ff6b6b;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #f7d94c;
-}
-
-p {
-    margin-top: 15px;
-}
-
-a
-
-h1 {
-    color: #333;
-    margin-bottom: 20px;
-}
-
-input[type="text"], input[type="password"] {
-    width: 100%;
-    height: 45px;
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 2px solid #ff6b6b;
-    border-radius: 10px;
-    transition: border-color 0.3s;
-}
-
-input[type="text"]:focus, input[type="password"]:focus {
-    border-color: #f7d94c;
-    outline: none;
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #f7d94c;
+  outline: none;
 }
 
 .forgot-password-text {
-    color: #ff6b6b;
-    cursor: pointer;
-    margin-top: 5px; /* Adjusted for spacing */
-    margin-left: 10px; /* Adjusted for spacing */
-    text-align: left; /* Align text to the left */
-    font-weight: normal; /* Normal weight for the text */
+  color: #ff6b6b;
+  cursor: pointer;
+  margin-top: 5px; /* Adjusted for spacing */
+  text-align: left; /* Align text to the left */
+  font-weight: normal; /* Normal weight for the text */
 }
 
 .forgot-password-text strong {
-    font-weight: bold; /* Make the question mark bold */
+  font-weight: bold; /* Make the question mark bold */
 }
 
 button {
-    width: 100%;
-    height: 45px;
-    background-color: #ff6b6b;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
+  width: 100%;
+  height: 45px;
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #85e63b;
+  background-color: #f7d94c;
 }
 
 p {
-    margin-top: 15px;
+  margin-top: 15px;
+}
+
+a h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid #ff6b6b;
+  border-radius: 10px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #f7d94c;
+  outline: none;
+}
+
+.forgot-password-text {
+  color: #ff6b6b;
+  cursor: pointer;
+  margin-top: 5px; /* Adjusted for spacing */
+  margin-left: 10px; /* Adjusted for spacing */
+  text-align: left; /* Align text to the left */
+  font-weight: normal; /* Normal weight for the text */
+}
+
+.forgot-password-text strong {
+  font-weight: bold; /* Make the question mark bold */
+}
+
+button {
+  width: 100%;
+  height: 45px;
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #85e63b;
+}
+
+p {
+  margin-top: 15px;
 }
 
 a {
-    color: #ff6b6b;
-    text-decoration: none; /* Removed underline */
+  color: #ff6b6b;
+  text-decoration: none; /* Removed underline */
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
