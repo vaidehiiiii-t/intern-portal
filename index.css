@@ -22,15 +22,15 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(255, 255, 255);
+  background: linear-gradient(to bottom, black, transparent);
   width: 100%;
   padding: 1rem;
-  border-radius: 50px;
+  /* border-radius: 50px; */
   z-index: 3;
   position: relative;
   color: rgb(80, 80, 80);
   margin-top: 0.4rem;
-  box-shadow: rgba(55, 1, 65, 0.986) 0px 20px 30px;
+  /* box-shadow: rgba(55, 1, 65, 0.986) 0px 20px 30px; */
 }
 nav ul {
   display: flex;
