@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: rgb(12, 12, 12);
+  color: rgb(142, 142, 142);
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 50px;
+  z-index: 3;
+  position: relative;
+  color: rgb(80, 80, 80);
+  margin-top: 0.4rem;
+  box-shadow: rgba(55, 1, 65, 0.986) 0px 20px 30px;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-left: 1rem;
+  list-style: none;
+}
+nav ul li {
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: aliceblue;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  overflow: visible;
+  transition: box-shadow, background-color 500ms ease-in-out;
+}
+nav ul li:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 30px;
+  background-color: rgba(239, 178, 251, 0.571);
+}
+
+/* Welcome Text in Header */
+
+.welcome--message {
+  position: absolute;
+  font-size: 4rem;
+  top: 9rem;
+}
+.logo--text {
+  position: absolute;
+  font-size: 10rem;
+  top: 10rem;
+  left: 2%;
+}
+
+.logo--text::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 0.4rem;
+  background-color: red;
+  bottom: 2.5rem;
+  animation: animateLine 3s infinite;
+}
+@keyframes animateLine {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0%;
+    left: 100%;
+  }
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px);
+  z-index: 0;
+}
+header .content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 2rem;
+}
+
+header .circle__1 {
+  position: absolute;
+  z-index: 0;
+  background-color: blueviolet;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  top: 45%;
+  left: 80%;
+  filter: blur(70px);
+  animation: animateCircle_1 10s infinite;
+}
+
+@keyframes animateCircle_1 {
+  0% {
+    width: 0%;
+    top: 0;
+  }
+  50% {
+    width: 100%;
+    top: 0;
+  }
+  100% {
+    width: 0%;
+    top: 100%;
+  }
+}
+
+header .circle__2 {
+  position: absolute;
+  z-index: 0;
+  background-color: rgb(149, 71, 159);
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  top: 20%;
+  left: 60%;
+  filter: blur(78px);
+  animation: animateCircle_2 20s infinite;
+}
+
+@keyframes animateCircle_2 {
+  0% {
+    width: 0%;
+    top: 0;
+  }
+  50% {
+    width: 100%;
+    top: 0;
+  }
+  100% {
+    width: 0%;
+    top: 100%;
+  }
+}
+
+/* Section Intro */
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section .title {
+  font-size: 2rem;
+}
+
+section .title::before {
+  content: "";
+  position: absolute;
+  bottom: -170px;
+  border-radius: 20px;
+  background-color: yellow;
+  height: 0.5rem;
+  width: 24rem;
+}
+
+section .description {
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+  font-size: larger;
+}
+
+.dsaStats--keyword {
+  color: #cccc02cc;
+}
+
+section .services {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.services .item {
+  display: flex;
+  flex-direction: row;
+  gap: 1.6rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem 2rem 2rem;
+  border: 1px solid rgba(55, 1, 65, 0.819);
+}
+.services .item p {
+  transition: color 300ms ease-in-out;
+}
+.services i {
+  color: rgb(185, 185, 185);
+  font-size: 3rem;
+  transition: color 300ms ease-in-out;
+}
+.services i:hover {
+  color: white;
+}
+.services .item p:hover {
+  color: white;
+}
