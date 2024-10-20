@@ -51,7 +51,7 @@ nav ul li {
 }
 nav ul li:hover {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 30px;
-  background-color: rgba(239, 178, 251, 0.571);
+  background-color: rgb(244, 203, 253);
 }
 
 /* Welcome Text in Header */
@@ -225,6 +225,10 @@ section .services {
   justify-content: center;
   padding: 2rem 1rem 2rem 2rem;
   border: 1px solid rgba(55, 1, 65, 0.819);
+  transition: border 300ms ease-in-out;
+}
+.services .item:hover {
+  border: 1px solid rgb(94, 0, 110);
 }
 .services .item p {
   transition: color 300ms ease-in-out;
