@@ -254,20 +254,39 @@
             <div class="add-form" id="addForm">
                 <h3>Add New Employee/Intern</h3>
                 <div class="form-row">
-                    <select id="roleSelect">
+                    <label for="typeSelect">Type:</label>
+                    <select id="typeSelect">
                         <option value="Employee">Employee</option>
                         <option value="Intern">Intern</option>
                     </select>
+                </div>
+                <div class="form-row">
+                    <label for="roleSelect">Role:</label>
+                    <select id="roleSelect">
+                        <option value="Backend">Backend</option>
+                        <option value="Frontend">Frontend</option>
+                        <option value="Full Stack">Full Stack</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="nameInput">Name:</label>
                     <input type="text" id="nameInput" placeholder="Name" required>
                 </div>
                 <div class="form-row">
+                    <label for="projectInput">Project:</label>
                     <input type="text" id="projectInput" placeholder="Project" required>
                 </div>
+            
                 <div class="form-row">
-                    <input type="text" id="statusInput" placeholder="Status" required>
+                    <label for="statusSelect">Status:</label>
+                    <select id="statusSelect">
+                        <option value="Active">Active</option>
+                        <option value="Inactive">Inactive</option>
+                    </select>
                 </div>
                 <button class="add-button" onclick="addNewEntry()">Add</button>
-            </div>            
+            </div>
+                        
         </section>
 
         <aside class="right-section">
@@ -318,21 +337,32 @@
         }
 
         function addNewEntry() {
-            const name = document.getElementById('nameInput').value;
+            const type = document.getElementById('typeSelect').value;
             const role = document.getElementById('roleSelect').value;
+            const name = document.getElementById('nameInput').value;
             const project = document.getElementById('projectInput').value;
-            const status = document.getElementById('statusInput').value;
-
+            const status = document.getElementById('statusSelect').value;
+        
             if (name && project && status) {
                 const table = document.getElementById('employeeTable');
                 const newRow = table.insertRow();
-
-                newRow.innerHTML = `<td>${name}</td><td>${role}</td><td>${project}</td><td>${status}</td>`;
+        
+                newRow.innerHTML = `
+                    <td>${name}</td>
+                    <td class="editable" onclick="editCell(this, ['Backend', 'Frontend', 'Full Stack'])">${role}</td>
+                    <td>${project}</td>
+                    <td class="editable" onclick="editCell(this, ['Active', 'Inactive'])">${status}</td>
+                    <td class="editable" onclick="editCell(this, ['Employee', 'Intern'])">${type}</td>
+                `;
+        
+                document.getElementById('typeSelect').value = 'Employee';
+                document.getElementById('roleSelect').value = 'Backend';
                 document.getElementById('nameInput').value = '';
                 document.getElementById('projectInput').value = '';
-                document.getElementById('statusInput').value = '';
+                document.getElementById('statusSelect').value = 'Active';
             }
         }
+        
     </script>
 </body>
 </html>
