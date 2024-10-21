@@ -244,3 +244,7 @@ section .services {
 .services .item p:hover {
   color: white;
 }
+
+a {
+  text-decoration: none;
+}
