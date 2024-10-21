@@ -1,5 +1,6 @@
 # intern-portal
 This platform will serve as a centralized system for the dsaStats team, allowing interns and admin staff to manage intern information, monitor team projects, and ensure smooth collaboration within the team.
+### Important Note! Ensure to sync all the changes made to the Origin ( Main ) branch of this repo with your forked repo, before pushing any code.
 
 ## Tech Stack 
 HTML CSS JS
