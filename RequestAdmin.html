@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Approval Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.approve, .deny {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.approve {
+    background-color: #3589e9de;
+     color: white; 
+}
+
+.approve:hover {
+    background-color: #0003095d;
+    color:#85b8f3
+}
+
+.deny {
+    background-color: #c5170ad0;
+    color: white;
+}
+
+.deny:hover {
+    background-color: #e53935;
+}
+ 
+
+
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.table-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+td {
+    color: #555;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+    <!-- <div class="container">
+        <h1>Request Approval</h1>
+        <div class="request-card">
+            <p class="request-info">  <strong>Aditi Trivedi</strong><br>(full stack intern)</p>
+            <p class="request-info"><em><strong>Wants to be the part of DSAstats</strong></em></p>
+            <div class="action-buttons">
+                <button class="approve" onclick="handleApproval()">Approve</button>
+                <button class="deny" onclick="handleDenial()">Deny</button>
+            </div>
+        </div>
+        <p id="response-message"></p>
+    </div> -->
+
+    <div class="table-container">
+        <h2>Request Approve</h2>
+        <h4>wants to be the part of DSastats</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Request</th>
+                    <th></th>
+                    <th></th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> <p class="request-info">  <strong>Aditi Trivedi</strong><br>(full stack intern)</p></td>
+                    <td><button class="approve" onclick="handleApproval()">Approve</button></td>
+                    <td><button class="deny" onclick="handleDenial()">Deny</button></td>
+                    
+                </tr>
+                <tr>
+                    <td> <p class="request-info">  <strong>Harshvardhan Singh</strong><br>(full stack intern)</p></td>
+                    <td><button class="approve" onclick="handleApproval()">Approve</button></td>
+                    <td><button class="deny" onclick="handleDenial()">Deny</button></td>
+                    
+                </tr>
+                <tr>
+                    <td> <p class="request-info">  <strong>Milli Gupta</strong><br>(full stack intern)</p></td>
+                    <td><button class="approve" onclick="handleApproval()">Approve</button></td>
+                    <td><button class="deny" onclick="handleDenial()">Deny</button></td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="scripts.js">
+        function handleApproval() {
+    const message = document.getElementById('response-message');
+    message.textContent = 'Request Approved!';
+    message.style.color = 'green';
+}
+
+function handleDenial() {
+    const message = document.getElementById('response-message');
+    message.textContent = 'Request Denied!';
+    message.style.color = 'red';
+}
+
+
+
+</script>
+</body>
+</html>
