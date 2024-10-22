@@ -47,6 +47,7 @@ input[type="password"] {
   border: 2px solid #ff6b6b;
   border-radius: 10px;
   transition: border-color 0.3s;
+  margin-left: -12px;
 }
 
 input[type="text"]:focus,
